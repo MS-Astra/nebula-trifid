@@ -1,0 +1,11 @@
+# https://ci.appveyor.com/project/MS-Astra/nebula-trifid
+---
+branches:
+  only:
+  - master
+  
+clone_depth: 5 
+
+# just perform builds for now, don't run tests
+build_script:
+    - cmd: cmake -G"Visual Studio 12 2013"
