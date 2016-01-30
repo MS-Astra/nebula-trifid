@@ -8,5 +8,5 @@ clone_depth: 5
 
 # just perform builds for now, don't run tests
 build_script:
-    - cmd: cmake -G"Visual Studio 12 2013" -DCMAKE_BUILD_TYPE=Debug -BC:/projects/build
+    - cmd: cmake -G"Visual Studio 12 2013" -DCMAKE_BUILD_TYPE=Debug -BC:/projects/nebula-trifid/build C:/projects/nebula-trifid/
     - cmd: cmake build . --config Debug
